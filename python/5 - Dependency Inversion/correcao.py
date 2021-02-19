@@ -34,7 +34,7 @@ class IntegranteTime(IntegrantesTimeVisualizador):
 
 
 class Analise:
-    def __init__(self, integrantes: IntegranteTime) -> None:
+    def __init__(self, integrantes: IntegrantesTimeVisualizador) -> None:
         for integrante in integrantes.buscar_todos_por_time(Time.VERMELHO):
             print(f'{integrante} é do time vermelho')
 
