@@ -1,4 +1,4 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 
 
 class Agenda:
@@ -56,7 +56,7 @@ class Agenda:
 
 
 class Salvar(ABC):
-    @abstractclassmethod
+    @abstractmethod
     def salvar(self, objeto, local):
         print(f'Agenda salva em \"{local}\"')
 
