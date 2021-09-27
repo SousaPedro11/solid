@@ -30,9 +30,9 @@ class DispositivoInternet(ABC):
 
 class SmartPhone(
     DispositivoComunicacao,
-        DispositivoChamada,
-        DispositivoSMS,
-        DispositivoInternet):
+    DispositivoChamada,
+    DispositivoSMS,
+    DispositivoInternet):
 
     def fazer_chamada(self, numero):
         print(f'{self.modelo} discando para {numero}')

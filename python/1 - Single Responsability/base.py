@@ -48,7 +48,7 @@ class Agenda:
             str: Retorna os registros da agenda em linhas
         """
         registros = [f'{nome}: {numero}' for nome,
-                     numero in self.agenda.items() if len(self.agenda) > 0]
+                                             numero in self.agenda.items() if len(self.agenda) > 0]
         return '\n'.join(registros)
 
     def salvar_para_arquivo(self, nome_arquivo: str, local: str) -> None:

@@ -51,7 +51,7 @@ class Agenda:
             str: Retorna os registros da agenda em linhas
         """
         registros = [f'{nome}: {numero}' for nome,
-                     numero in self.agenda.items() if len(self.agenda) > 0]
+                                             numero in self.agenda.items() if len(self.agenda) > 0]
         return '\n'.join(registros)
 
 
@@ -66,7 +66,7 @@ class SalvarArquivo(Salvar):
         """Salva os registros em arquivo
 
         Args:
-            objeto (str): Agenda
+            objeto (Agenda): Agenda
             local (str): Path onde sera salvo
         """
         # TODO logica doida
@@ -78,7 +78,7 @@ class SalvarBanco(Salvar):
         """Salva os registros em banco de dados
 
         Args:
-            objeto (str): Agenda
+            objeto (Agenda): Agenda
             local (str): Referencia ao banco de dados
         """
         # TODO logica doida

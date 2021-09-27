@@ -15,7 +15,7 @@ class Veiculo:
 
     def __str__(self) -> str:
         prop_str = ", ".join([str(valor) for valor in self.get_propriedades()
-                              .values()])
+                             .values()])
         return f'{self.tipo}: {prop_str}'
 
 
@@ -26,7 +26,6 @@ class Carro(Veiculo):
 
 caminhao = Veiculo('caminhao')
 caminhao.set_propriedades('azul', 'manual', 6)
-
 
 carro = Carro('Sedan')
 carro.set_propriedades('preto', 'automatico', 5)
