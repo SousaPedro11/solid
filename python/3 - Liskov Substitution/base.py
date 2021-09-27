@@ -2,6 +2,9 @@ class Veiculo:
     def __init__(self, tipo) -> None:
         self.tipo = tipo
 
+    def __str__(self) -> str:
+        return self.tipo
+
 
 class Carro(Veiculo):
     def __init__(self, tipo) -> None:

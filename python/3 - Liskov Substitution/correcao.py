@@ -28,7 +28,7 @@ caminhao = Veiculo('caminhao')
 caminhao.set_propriedades('azul', 'manual', 6)
 
 carro = Carro('Sedan')
-carro.set_propriedades('preto', 'automatico', 5)
+carro.set_propriedades('azul', 'automatico', 5)
 
 kombi = Veiculo('kombi')
 kombi.set_propriedades('azul', 'manual', 12)
